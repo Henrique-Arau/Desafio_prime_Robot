@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20240612 10:49:01.965" rpa="false" schemaversion="4">
+<suite id="s1" name="Features" source="C:\Users\penie\OneDrive\Área de Trabalho\Desafios robot 2º semana\test\features">
+<suite id="s1-s1" name="Exercicio Argumentos E Retornos If" source="C:\Users\penie\OneDrive\Área de Trabalho\Desafios robot 2º semana\test\features\exercicio_argumentos_e_retornos_if.robot">
+<test id="s1-s1-t1" name="Cenario 01: Calculo de Ano De nascimento" line="10">
+<kw name="Calcular Ano De Nascimento">
+<arg>30</arg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${ano_nascimento}</var>
+<arg>${CURRENT_YEAR} - ${idade}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240612 10:49:02.005" level="INFO">${ano_nascimento} = -30</msg>
+<status status="PASS" starttime="20240612 10:49:02.005" endtime="20240612 10:49:02.005"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${ano_nascimento} &lt; 2000</arg>
+<arg>Log</arg>
+<arg>Você nasceu no século passado.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log" library="BuiltIn">
+<arg>Você nasceu no século passado.</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240612 10:49:02.007" level="INFO">Você nasceu no século passado.</msg>
+<status status="PASS" starttime="20240612 10:49:02.006" endtime="20240612 10:49:02.007"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.006" endtime="20240612 10:49:02.007"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Seu ano de nascimento é:${ano_nascimento}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240612 10:49:02.007" level="INFO">Seu ano de nascimento é:-30</msg>
+<status status="PASS" starttime="20240612 10:49:02.007" endtime="20240612 10:49:02.007"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.004" endtime="20240612 10:49:02.007"/>
+</kw>
+<kw name="Calcular Ano De Nascimento">
+<arg>25</arg>
+<kw name="Evaluate" library="BuiltIn">
+<var>${ano_nascimento}</var>
+<arg>${CURRENT_YEAR} - ${idade}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20240612 10:49:02.008" level="INFO">${ano_nascimento} = -25</msg>
+<status status="PASS" starttime="20240612 10:49:02.008" endtime="20240612 10:49:02.008"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${ano_nascimento} &lt; 2000</arg>
+<arg>Log</arg>
+<arg>Você nasceu no século passado.</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log" library="BuiltIn">
+<arg>Você nasceu no século passado.</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240612 10:49:02.009" level="INFO">Você nasceu no século passado.</msg>
+<status status="PASS" starttime="20240612 10:49:02.009" endtime="20240612 10:49:02.009"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.008" endtime="20240612 10:49:02.009"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Seu ano de nascimento é:${ano_nascimento}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240612 10:49:02.010" level="INFO">Seu ano de nascimento é:-25</msg>
+<status status="PASS" starttime="20240612 10:49:02.009" endtime="20240612 10:49:02.010"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.008" endtime="20240612 10:49:02.010"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.003" endtime="20240612 10:49:02.010"/>
+</test>
+<doc>Teste para calcular o ano de nascimento e verificar a mensagem</doc>
+<status status="PASS" starttime="20240612 10:49:01.995" endtime="20240612 10:49:02.013"/>
+</suite>
+<suite id="s1-s2" name="Exercicio Dicionario" source="C:\Users\penie\OneDrive\Área de Trabalho\Desafios robot 2º semana\test\features\exercicio_dicionario.robot">
+<test id="s1-s2-t1" name="Cenario 01: variavel DICIONARIO" line="10">
+<kw name="Logar variavel Dicionario No Console">
+<kw name="Log To Console" library="BuiltIn">
+<arg>.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240612 10:49:02.023" endtime="20240612 10:49:02.023"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>-----------------------</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240612 10:49:02.023" endtime="20240612 10:49:02.024"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Nome:${DICIONARIO.nome}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240612 10:49:02.024" endtime="20240612 10:49:02.025"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Idade:${DICIONARIO.idade}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240612 10:49:02.026" endtime="20240612 10:49:02.027"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Rua:${DICIONARIO.rua}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240612 10:49:02.027" endtime="20240612 10:49:02.028"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Numero:${DICIONARIO.numero}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240612 10:49:02.029" endtime="20240612 10:49:02.030"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Cep:${DICIONARIO.cep}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240612 10:49:02.030" endtime="20240612 10:49:02.032"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Bairro:${DICIONARIO.bairro}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240612 10:49:02.032" endtime="20240612 10:49:02.033"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Cidade:${DICIONARIO.cidade}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240612 10:49:02.033" endtime="20240612 10:49:02.035"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Estado:${DICIONARIO.estado}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240612 10:49:02.035" endtime="20240612 10:49:02.037"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>-----------------------</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240612 10:49:02.037" endtime="20240612 10:49:02.038"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.022" endtime="20240612 10:49:02.038"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.022" endtime="20240612 10:49:02.038"/>
+</test>
+<doc>Demonstração de tipos de variaveis usando Dicionario</doc>
+<status status="PASS" starttime="20240612 10:49:02.016" endtime="20240612 10:49:02.039"/>
+</suite>
+<suite id="s1-s3" name="Exercicio For In Range" source="C:\Users\penie\OneDrive\Área de Trabalho\Desafios robot 2º semana\test\features\exercicio_for_in_range.robot">
+<test id="s1-s3-t1" name="Cenario 01: For in range" line="13">
+<kw name="Contar Numeros PARES">
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>${START}</value>
+<value>${Numeros}+1</value>
+<value>${STEP}</value>
+<iter>
+<var name="${i}">1</var>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} ${i}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240612 10:49:02.058" endtime="20240612 10:49:02.058"/>
+</kw>
+<status status="NOT RUN" starttime="20240612 10:49:02.058" endtime="20240612 10:49:02.058"/>
+</branch>
+<status status="PASS" starttime="20240612 10:49:02.057" endtime="20240612 10:49:02.058"/>
+</if>
+<status status="PASS" starttime="20240612 10:49:02.057" endtime="20240612 10:49:02.058"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} ${i}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240612 10:49:02.059" level="INFO">${PARES} = 0 2</msg>
+<status status="PASS" starttime="20240612 10:49:02.059" endtime="20240612 10:49:02.059"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.058" endtime="20240612 10:49:02.059"/>
+</branch>
+<status status="PASS" starttime="20240612 10:49:02.058" endtime="20240612 10:49:02.059"/>
+</if>
+<status status="PASS" starttime="20240612 10:49:02.058" endtime="20240612 10:49:02.059"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} ${i}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240612 10:49:02.060" endtime="20240612 10:49:02.060"/>
+</kw>
+<status status="NOT RUN" starttime="20240612 10:49:02.059" endtime="20240612 10:49:02.060"/>
+</branch>
+<status status="PASS" starttime="20240612 10:49:02.059" endtime="20240612 10:49:02.060"/>
+</if>
+<status status="PASS" starttime="20240612 10:49:02.059" endtime="20240612 10:49:02.060"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} ${i}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240612 10:49:02.061" level="INFO">${PARES} = 0 2 4</msg>
+<status status="PASS" starttime="20240612 10:49:02.061" endtime="20240612 10:49:02.061"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.060" endtime="20240612 10:49:02.061"/>
+</branch>
+<status status="PASS" starttime="20240612 10:49:02.060" endtime="20240612 10:49:02.061"/>
+</if>
+<status status="PASS" starttime="20240612 10:49:02.060" endtime="20240612 10:49:02.061"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} ${i}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240612 10:49:02.062" endtime="20240612 10:49:02.062"/>
+</kw>
+<status status="NOT RUN" starttime="20240612 10:49:02.062" endtime="20240612 10:49:02.062"/>
+</branch>
+<status status="PASS" starttime="20240612 10:49:02.062" endtime="20240612 10:49:02.063"/>
+</if>
+<status status="PASS" starttime="20240612 10:49:02.061" endtime="20240612 10:49:02.063"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} ${i}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240612 10:49:02.064" level="INFO">${PARES} = 0 2 4 6</msg>
+<status status="PASS" starttime="20240612 10:49:02.063" endtime="20240612 10:49:02.064"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.063" endtime="20240612 10:49:02.064"/>
+</branch>
+<status status="PASS" starttime="20240612 10:49:02.063" endtime="20240612 10:49:02.064"/>
+</if>
+<status status="PASS" starttime="20240612 10:49:02.063" endtime="20240612 10:49:02.064"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} ${i}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240612 10:49:02.064" endtime="20240612 10:49:02.064"/>
+</kw>
+<status status="NOT RUN" starttime="20240612 10:49:02.064" endtime="20240612 10:49:02.064"/>
+</branch>
+<status status="PASS" starttime="20240612 10:49:02.064" endtime="20240612 10:49:02.064"/>
+</if>
+<status status="PASS" starttime="20240612 10:49:02.064" endtime="20240612 10:49:02.064"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} ${i}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240612 10:49:02.065" level="INFO">${PARES} = 0 2 4 6 8</msg>
+<status status="PASS" starttime="20240612 10:49:02.065" endtime="20240612 10:49:02.065"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.065" endtime="20240612 10:49:02.065"/>
+</branch>
+<status status="PASS" starttime="20240612 10:49:02.065" endtime="20240612 10:49:02.065"/>
+</if>
+<status status="PASS" starttime="20240612 10:49:02.065" endtime="20240612 10:49:02.065"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} ${i}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20240612 10:49:02.066" endtime="20240612 10:49:02.067"/>
+</kw>
+<status status="NOT RUN" starttime="20240612 10:49:02.066" endtime="20240612 10:49:02.067"/>
+</branch>
+<status status="PASS" starttime="20240612 10:49:02.066" endtime="20240612 10:49:02.067"/>
+</if>
+<status status="PASS" starttime="20240612 10:49:02.066" endtime="20240612 10:49:02.067"/>
+</iter>
+<iter>
+<var name="${i}">10</var>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} ${i}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240612 10:49:02.067" level="INFO">${PARES} = 0 2 4 6 8 10</msg>
+<status status="PASS" starttime="20240612 10:49:02.067" endtime="20240612 10:49:02.068"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.067" endtime="20240612 10:49:02.068"/>
+</branch>
+<status status="PASS" starttime="20240612 10:49:02.067" endtime="20240612 10:49:02.068"/>
+</if>
+<status status="PASS" starttime="20240612 10:49:02.067" endtime="20240612 10:49:02.068"/>
+</iter>
+<status status="PASS" starttime="20240612 10:49:02.057" endtime="20240612 10:49:02.068"/>
+</for>
+<kw name="Log" library="BuiltIn">
+<arg>Quantidade de números pares: ${PARES}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240612 10:49:02.068" level="INFO">Quantidade de números pares: 0 2 4 6 8 10</msg>
+<status status="PASS" starttime="20240612 10:49:02.068" endtime="20240612 10:49:02.068"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.056" endtime="20240612 10:49:02.068"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.056" endtime="20240612 10:49:02.068"/>
+</test>
+<status status="PASS" starttime="20240612 10:49:02.041" endtime="20240612 10:49:02.070"/>
+</suite>
+<suite id="s1-s4" name="Exercicio For Simples Lista" source="C:\Users\penie\OneDrive\Área de Trabalho\Desafios robot 2º semana\test\features\exercicio_for_simples_lista.robot">
+<test id="s1-s4-t1" name="Cenario 01: For Simples Em Lista" line="8">
+<kw name="Exemplo de FOR Simples em Lista">
+<for flavor="IN">
+<var>${fruta}</var>
+<value>@{FRUTAS}</value>
+<iter>
+<var name="${fruta}">morango</var>
+<kw name="Log" library="BuiltIn">
+<arg>A fruta é: ${fruta}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240612 10:49:02.080" level="INFO">A fruta é: morango</msg>
+<status status="PASS" starttime="20240612 10:49:02.079" endtime="20240612 10:49:02.080"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.079" endtime="20240612 10:49:02.080"/>
+</iter>
+<iter>
+<var name="${fruta}">banana</var>
+<kw name="Log" library="BuiltIn">
+<arg>A fruta é: ${fruta}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240612 10:49:02.080" level="INFO">A fruta é: banana</msg>
+<status status="PASS" starttime="20240612 10:49:02.080" endtime="20240612 10:49:02.081"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.080" endtime="20240612 10:49:02.081"/>
+</iter>
+<iter>
+<var name="${fruta}">maçã</var>
+<kw name="Log" library="BuiltIn">
+<arg>A fruta é: ${fruta}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240612 10:49:02.082" level="INFO">A fruta é: maçã</msg>
+<status status="PASS" starttime="20240612 10:49:02.081" endtime="20240612 10:49:02.082"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.081" endtime="20240612 10:49:02.082"/>
+</iter>
+<iter>
+<var name="${fruta}">uva</var>
+<kw name="Log" library="BuiltIn">
+<arg>A fruta é: ${fruta}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240612 10:49:02.082" level="INFO">A fruta é: uva</msg>
+<status status="PASS" starttime="20240612 10:49:02.082" endtime="20240612 10:49:02.082"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.082" endtime="20240612 10:49:02.083"/>
+</iter>
+<iter>
+<var name="${fruta}">abacaxi</var>
+<kw name="Log" library="BuiltIn">
+<arg>A fruta é: ${fruta}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240612 10:49:02.083" level="INFO">A fruta é: abacaxi</msg>
+<status status="PASS" starttime="20240612 10:49:02.083" endtime="20240612 10:49:02.083"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.083" endtime="20240612 10:49:02.083"/>
+</iter>
+<status status="PASS" starttime="20240612 10:49:02.079" endtime="20240612 10:49:02.083"/>
+</for>
+<status status="PASS" starttime="20240612 10:49:02.078" endtime="20240612 10:49:02.083"/>
+</kw>
+<status status="PASS" starttime="20240612 10:49:02.077" endtime="20240612 10:49:02.084"/>
+</test>
+<status status="PASS" starttime="20240612 10:49:02.072" endtime="20240612 10:49:02.085"/>
+</suite>
+<status status="PASS" starttime="20240612 10:49:01.967" endtime="20240612 10:49:02.087"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Features">Features</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Exercicio Argumentos E Retornos If">Features.Exercicio Argumentos E Retornos If</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Exercicio Dicionario">Features.Exercicio Dicionario</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s3" name="Exercicio For In Range">Features.Exercicio For In Range</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="Exercicio For Simples Lista">Features.Exercicio For Simples Lista</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

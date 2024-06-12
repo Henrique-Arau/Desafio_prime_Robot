@@ -3,7 +3,7 @@ Library    Collections
 
 
 *** Variables ***
-${START}        0
+${START}        1
 ${Numeros}      10
 ${STEP}         1
 ${PARES}        0
@@ -15,13 +15,12 @@ Cenario 01: For in range
 
 *** Keywords ***
 Contar Numeros PARES
-    FOR    ${i}    IN RANGE    ${START}   ${Numeros} + 1    ${STEP}
+    FOR    ${i}    IN RANGE    ${START}   ${Numeros}+1   ${STEP}
        IF  ${i} % 2 == 0
-           ${PARES}=    Set Variable    ${PARES} + 1
-           Log To Console   Numero par: ${i}
+           ${PARES}=    Set Variable   ${PARES} ${i}
        END
     END
-    Log To Console    Quantidade de números pares: ${PARES}
+    Log    Quantidade de números pares: ${PARES}
 
 
     
