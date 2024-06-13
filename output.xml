@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on win32)" generated="2024-06-13T15:51:39.844133" rpa="false" schemaversion="5">
+<suite id="s1" name="Exercicio For In Range" source="c:\Users\penie\OneDrive\Área de Trabalho\Desafios robot 2º semana\test\features\exercicio_for_in_range.robot">
+<test id="s1-t1" name="Cenario 01: For in range" line="13">
+<kw name="Contar Numeros PARES">
+<for flavor="IN RANGE">
+<iter>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-06-13T15:51:39.927024" level="INFO">${PARES} = 1</msg>
+<var>${PARES}</var>
+<arg>${PARES} +1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-06-13T15:51:39.926492" elapsed="0.004995"/>
+</kw>
+<status status="PASS" start="2024-06-13T15:51:39.925438" elapsed="0.006623"/>
+</branch>
+<status status="PASS" start="2024-06-13T15:51:39.925438" elapsed="0.006623"/>
+</if>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-06-13T15:51:39.924895" elapsed="0.007729"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} +1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-06-13T15:51:39.934368" elapsed="0.000539"/>
+</kw>
+<status status="NOT RUN" start="2024-06-13T15:51:39.933747" elapsed="0.001160"/>
+</branch>
+<status status="PASS" start="2024-06-13T15:51:39.933182" elapsed="0.002291"/>
+</if>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-06-13T15:51:39.933182" elapsed="0.002291"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-06-13T15:51:39.938348" level="INFO">${PARES} = 2</msg>
+<var>${PARES}</var>
+<arg>${PARES} +1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-06-13T15:51:39.937193" elapsed="0.001745"/>
+</kw>
+<status status="PASS" start="2024-06-13T15:51:39.936629" elapsed="0.002309"/>
+</branch>
+<status status="PASS" start="2024-06-13T15:51:39.936629" elapsed="0.002873"/>
+</if>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-06-13T15:51:39.936051" elapsed="0.003451"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} +1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-06-13T15:51:39.941130" elapsed="0.000214"/>
+</kw>
+<status status="NOT RUN" start="2024-06-13T15:51:39.940061" elapsed="0.001841"/>
+</branch>
+<status status="PASS" start="2024-06-13T15:51:39.940061" elapsed="0.001841"/>
+</if>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-06-13T15:51:39.940061" elapsed="0.001841"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-06-13T15:51:39.944744" level="INFO">${PARES} = 3</msg>
+<var>${PARES}</var>
+<arg>${PARES} +1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-06-13T15:51:39.943622" elapsed="0.001122"/>
+</kw>
+<status status="PASS" start="2024-06-13T15:51:39.943047" elapsed="0.002256"/>
+</branch>
+<status status="PASS" start="2024-06-13T15:51:39.943047" elapsed="0.002256"/>
+</if>
+<var name="${i}">4</var>
+<status status="PASS" start="2024-06-13T15:51:39.942478" elapsed="0.002825"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} +1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-06-13T15:51:39.946421" elapsed="0.000569"/>
+</kw>
+<status status="NOT RUN" start="2024-06-13T15:51:39.945865" elapsed="0.001125"/>
+</branch>
+<status status="PASS" start="2024-06-13T15:51:39.945865" elapsed="0.001125"/>
+</if>
+<var name="${i}">5</var>
+<status status="PASS" start="2024-06-13T15:51:39.945865" elapsed="0.001663"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-06-13T15:51:39.948689" level="INFO">${PARES} = 4</msg>
+<var>${PARES}</var>
+<arg>${PARES} +1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-06-13T15:51:39.948664" elapsed="0.000572"/>
+</kw>
+<status status="PASS" start="2024-06-13T15:51:39.948124" elapsed="0.001112"/>
+</branch>
+<status status="PASS" start="2024-06-13T15:51:39.948124" elapsed="0.001112"/>
+</if>
+<var name="${i}">6</var>
+<status status="PASS" start="2024-06-13T15:51:39.947560" elapsed="0.001676"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} +1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-06-13T15:51:39.950343" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-06-13T15:51:39.949779" elapsed="0.001076"/>
+</branch>
+<status status="PASS" start="2024-06-13T15:51:39.949779" elapsed="0.001125"/>
+</if>
+<var name="${i}">7</var>
+<status status="PASS" start="2024-06-13T15:51:39.949779" elapsed="0.001125"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-06-13T15:51:39.952001" level="INFO">${PARES} = 5</msg>
+<var>${PARES}</var>
+<arg>${PARES} +1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-06-13T15:51:39.951464" elapsed="0.000537"/>
+</kw>
+<status status="PASS" start="2024-06-13T15:51:39.951464" elapsed="0.001075"/>
+</branch>
+<status status="PASS" start="2024-06-13T15:51:39.951464" elapsed="0.001075"/>
+</if>
+<var name="${i}">8</var>
+<status status="PASS" start="2024-06-13T15:51:39.950904" elapsed="0.001635"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<var>${PARES}</var>
+<arg>${PARES} +1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" start="2024-06-13T15:51:39.954232" elapsed="0.000055"/>
+</kw>
+<status status="NOT RUN" start="2024-06-13T15:51:39.953151" elapsed="0.001136"/>
+</branch>
+<status status="PASS" start="2024-06-13T15:51:39.953151" elapsed="0.001136"/>
+</if>
+<var name="${i}">9</var>
+<status status="PASS" start="2024-06-13T15:51:39.952539" elapsed="0.001748"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="${i} % 2 == 0">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-06-13T15:51:39.955254" level="INFO">${PARES} = 6</msg>
+<var>${PARES}</var>
+<arg>${PARES} +1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-06-13T15:51:39.955254" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2024-06-13T15:51:39.955254" elapsed="0.000999"/>
+</branch>
+<status status="PASS" start="2024-06-13T15:51:39.955254" elapsed="0.000999"/>
+</if>
+<var name="${i}">10</var>
+<status status="PASS" start="2024-06-13T15:51:39.954287" elapsed="0.001966"/>
+</iter>
+<var>${i}</var>
+<value>${START}</value>
+<value>${Numeros}+1</value>
+<value>${STEP}</value>
+<status status="PASS" start="2024-06-13T15:51:39.923806" elapsed="0.032999"/>
+</for>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Quantidade de números pares: ${PARES}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-13T15:51:39.956805" elapsed="0.000986"/>
+</kw>
+<status status="PASS" start="2024-06-13T15:51:39.922137" elapsed="0.035654"/>
+</kw>
+<status status="PASS" start="2024-06-13T15:51:39.920127" elapsed="0.038670"/>
+</test>
+<status status="PASS" start="2024-06-13T15:51:39.853128" elapsed="0.108667"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Exercicio For In Range">Exercicio For In Range</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
