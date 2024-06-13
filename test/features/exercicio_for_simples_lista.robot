@@ -11,6 +11,6 @@ Cenario 01: For Simples Em Lista
 *** Keywords ***
 Exemplo de FOR Simples em Lista
     FOR    ${fruta}    IN    @{FRUTAS}
-    Log    A fruta é: ${fruta}
+    Log To Console   A fruta é: ${fruta}
     
     END

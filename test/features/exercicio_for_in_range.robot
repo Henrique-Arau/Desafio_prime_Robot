@@ -20,7 +20,7 @@ Contar Numeros PARES
            ${PARES}=    Set Variable   ${PARES} ${i}
        END
     END
-    Log    Quantidade de números pares: ${PARES}
+    Log To Console    Quantidade de números pares: ${PARES}
 
 
     

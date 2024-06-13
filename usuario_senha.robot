@@ -14,13 +14,13 @@ Library    Collections
 Teste De Alteração De Senha
     [Setup]    Alterar Senha
     [Teardown]    Restaurar Senha Inicial
-    Log    Dicionário durante o teste: ${CREDENCIAIS}
+    Log To Console    Dicionário durante o teste: ${CREDENCIAIS}
 
 *** Keywords ***
 Alterar Senha
     Set To Dictionary    ${CREDENCIAIS}    senha    ${NOVA_SENHA}
-    Log    Dicionário no Setup com senha alterada: ${CREDENCIAIS}
+    Log To Console   Dicionário no Setup com senha alterada: ${CREDENCIAIS}
 
 Restaurar Senha Inicial
     Set To Dictionary    ${CREDENCIAIS}    senha    ${SENHA_INICIAL}
-    Log    Dicionário no Teardown com senha restaurada: ${CREDENCIAIS}
+    Log To Console   Dicionário no Teardown com senha restaurada: ${CREDENCIAIS}
